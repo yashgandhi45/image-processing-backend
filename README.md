@@ -34,7 +34,7 @@ A Node.js backend service that processes a CSV of product image URLs, compresses
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/image-processing-backend.git
+git clone https://github.com/yashgandhi45/image-processing-backend.git
 cd image-processing-backend
 npm install
 ```

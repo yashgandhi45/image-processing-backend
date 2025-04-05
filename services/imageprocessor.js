@@ -30,4 +30,12 @@ exports.processImages = async (images, requestId) => {
   await Promise.all(promises);
 
   await Request.updateOne({ requestId }, { status: 'COMPLETED' });
+  const request = await Request.findOne({ requestId });
+  if (request.webhookUrl) {
+    try {
+      await axios.post(request.webhookUrl, { requestId, status: 'COMPLETED' });
+    } catch (err) {
+      console.error('Webhook call failed:', err.message);
+    }
+  }
 };

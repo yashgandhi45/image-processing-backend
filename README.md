@@ -53,7 +53,7 @@ PORT=3000
 ## ▶️ Running the App
 
 ```bash
-npm start
+node app.js
 ```
 
 App will be live at: [http://localhost:3000](http://localhost:3000)

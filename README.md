@@ -156,4 +156,5 @@ Payload:
 
 - Use `POST /upload` to send CSV (`multipart/form-data`)
 - Use `GET /status/:requestId` to check progress
+- Use `GET /uploads/compressed/<filename>` to view the compressed Image
 - Retrieve the output CSV manually from `/uploads/output`
